@@ -6,4 +6,4 @@ echo "Error"
 else
 echo "Install ngnix"
 fi
-dnf install ngnix -y
+dnf install nginx -y
