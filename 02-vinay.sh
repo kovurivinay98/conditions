@@ -1,9 +1,13 @@
-#!/bin/bash
-USERID=$1
+NUMBER=$1
 
-if [ $USERID -ne 18 ]
+# -gt --> greater than
+# -lt --> less than
+# -eq --> equal
+# -ne --> not equal
+
+if [ $NUMBER -lt 10 ]
 then
-    echo "ERROR:: Please run this script with root access"
-    exit 1 #give other than 0 upto 127
+    echo "Given number $NUMBER is less than 10"
 else
-    echo "You are running with root access"
+    echo "Given number $NUMBER is not less than 10"
+fi
