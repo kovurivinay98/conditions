@@ -1,6 +1,6 @@
 #!/bin/bash
 USERID=$(id -u)
-if[USERID -nt 0]
+if [ USERID -nt 0 ]
 then 
 echo "Error"
 else
