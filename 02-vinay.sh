@@ -1,12 +1,9 @@
 #!/bin/bash
-USERID=$(id -u)
-echo "$USERID"
+USERID=$1
 
-if [ $USERID -eq 0 ]
+if [ $USERID -ne 18 ]
 then
-   echo "Root User"
-   else
-   echo "Not Root User"
-
-
-f1 
+    echo "ERROR:: Please run this script with root access"
+    exit 1 #give other than 0 upto 127
+else
+    echo "You are running with root access"
