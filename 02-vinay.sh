@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
  echo "user-id is $USERID"
-if [ $USERID -et 0 ];
+if [ $USERID -eq 0 ];
    then
       echo "This user is root user"
    else
