@@ -1,7 +1,10 @@
-Age=$1
-if [ $Age -ge 18 ]
-then 
-    echo "He is Eligible "
-else
-    echo "He is Not"
-fi
+#!/bin/bash
+
+USERID=$(id -u)
+
+if [ $USERID -et 0 ];
+   then
+      echo "This user is root user"
+   else
+      echo "This is not root user" 
+fi      
