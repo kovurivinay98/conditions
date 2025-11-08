@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
-
+ echo "user-id is $USERID"
 if [ $USERID -et 0 ];
    then
       echo "This user is root user"
