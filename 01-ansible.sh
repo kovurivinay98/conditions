@@ -1,5 +1,5 @@
 #!/bin/bash
-userid(id -u)
+userid=$(id -u)
 if [ $userid -eq 0 ]
 then
     dnf list installed ansible
