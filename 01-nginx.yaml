@@ -1,6 +1,6 @@
 - name: "Installing nginx"
-  host: local
-  connection: local
+  host: Node
+  connection: yes
   tasks:
     -name: "Installing nginx"
     ansible.builtin.package:
