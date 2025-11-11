@@ -1,0 +1,9 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars:
+    Name: Vinay
+  tasks:
+    - name: Display Messege
+      ansible.builtin.debug:
+        msg: My name is {{ Name }}
