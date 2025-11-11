@@ -1,6 +1,6 @@
 - name: play level variables
-  hosts: local
-  connection: local
+  hosts: NODE
+  become: yes
   vars:
     Name: Vinay
   tasks:
