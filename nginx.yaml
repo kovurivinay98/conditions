@@ -1,8 +1,0 @@
-- name: Installing nginx on local host
-  hosts: local
-  connection: local
-  tasks:
-    - name: Ensure nginx package is installed
-      ansible.builtin.package:
-        name: nginx
-        state: present
